@@ -16,9 +16,9 @@
 ### Connect with Me :
 
 <p >
-<a href="#" target="_blank"><img src="https://img.shields.io/badge/Linkedin-%230077B5.svg?&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="#" target="_blank"><img src="https://img.shields.io/badge/gmail-%23E4405F.svg?&logo=gmail&logoColor=white" alt="Gmail"></a>  
-<a href="#" target="_blank"><img src="https://img.shields.io/badge/-Whatsapp-4CA143?&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=+01143776030&text=Hi!" alt="Whatsapp"></a>
+<a href="https://www.linkedin.com/in/odaytarek/" target="_blank"><img src="https://img.shields.io/badge/Linkedin-%230077B5.svg?&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:odaytarek62@gmail.com" target="_blank"><img src="https://img.shields.io/badge/gmail-%23E4405F.svg?&logo=gmail&logoColor=white" alt="Gmail"></a>  
+<a href="https://api.whatsapp.com/send?phone=+201143776030&text=Hi!" target="_blank"><img src="https://img.shields.io/badge/-Whatsapp-4CA143?&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=+01143776030&text=Hi!" alt="Whatsapp"></a>
 
 ### 🛠 &nbsp;Tech Stack
 
