@@ -123,10 +123,11 @@ Source is private — happy to walk through the architecture on request.
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=AKira0169&show_icons=true&theme=tokyonight&hide_border=true&border_radius=15&include_all_commits=true&count_private=true" />
-<img width="49%" src="https://streak-stats.demolab.com/?user=AKira0169&theme=tokyonight&hide_border=true&border_radius=15" />
-
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AKira0169&layout=compact&theme=tokyonight&hide_border=true&border_radius=15&langs_count=8" />
+<!-- Generated in CI by .github/workflows/metrics.yml and committed to this repo.
+     Deliberately NOT rendered by a third-party service at page load — the ones
+     that used to be here are dead or too slow for GitHub's image proxy. -->
+<img width="49%" src="https://raw.githubusercontent.com/AKira0169/AKira0169/master/metrics/overview.svg" alt="GitHub activity overview" />
+<img width="49%" src="https://raw.githubusercontent.com/AKira0169/AKira0169/master/metrics/calendar.svg" alt="Contributions calendar and commit streaks" />
 
 </div>
 
