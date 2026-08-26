@@ -6,6 +6,13 @@ name: Generate Metrics
 # Both rendered as broken images. These are generated here instead and committed
 # to the repo, so the README serves them from raw.githubusercontent.com with no
 # runtime dependency on anyone else's infrastructure.
+#
+# NOTE ON SCOPE: this uses the built-in GITHUB_TOKEN, which is scoped to THIS
+# repository. Activity and community figures come from the user's contribution
+# data and are accurate; anything that must ENUMERATE repositories is not.
+# That is why `repositories` is absent from `base` (it rendered "1 Repository")
+# and why there is no languages card ("0 Languages"). Both need a PAT with
+# `repo` + `read:user` stored as a secret. Add one and you can restore them.
 on:
   schedule:
     - cron: "0 3 * * *"
@@ -24,21 +31,8 @@ jobs:
           filename: metrics/overview.svg
           user: AKira0169
           template: classic
-          base: header, activity, community, repositories
+          base: header, activity, community
           config_timezone: Africa/Cairo
-          config_display: large
-
-      - name: Languages
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          filename: metrics/languages.svg
-          user: AKira0169
-          base: ""
-          config_timezone: Africa/Cairo
-          plugin_languages: yes
-          plugin_languages_details: percentage
-          plugin_languages_limit: 8
 
       - name: Activity calendar
         uses: lowlighter/metrics@latest
