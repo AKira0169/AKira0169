@@ -1,0 +1,52 @@
+name: Generate Metrics
+
+# The README used to pull these cards from shared public services at page-load:
+#   github-readme-stats.vercel.app  -> DEPLOYMENT_PAUSED (dead)
+#   streak-stats.demolab.com        -> valid, but 6-9s, past GitHub camo's timeout
+# Both rendered as broken images. These are generated here instead and committed
+# to the repo, so the README serves them from raw.githubusercontent.com with no
+# runtime dependency on anyone else's infrastructure.
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Overview
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/overview.svg
+          user: AKira0169
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Africa/Cairo
+          config_display: large
+
+      - name: Languages
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/languages.svg
+          user: AKira0169
+          base: ""
+          config_timezone: Africa/Cairo
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+
+      - name: Activity calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: metrics/calendar.svg
+          user: AKira0169
+          base: ""
+          config_timezone: Africa/Cairo
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year

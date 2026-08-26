@@ -9,6 +9,9 @@ on:
   push:
     branches:
       - master
+    # the metrics job commits SVGs to master; don't re-run the snake for those
+    paths-ignore:
+      - "metrics/**"
 
 jobs:
   generate:
